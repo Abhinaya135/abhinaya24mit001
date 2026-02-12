@@ -474,12 +474,89 @@ font-style:Bold;
 }
 
 /* Responsive tweaks */
-@media(max-width:768px) {
-  .footer-wave {
-    height: 30px;
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
   }
-  .site-footer h5 {
-    font-size: 16px;
+
+  .info-box {
+    justify-content: center;
   }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-number {
+    font-size: 22px;
+  }
+
+  /* NAVBAR FIX */
+  .main-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .main-menu li {
+    width: 100%;
+  }
+
+  .main-menu a {
+    padding: 12px;
+  }
+
+  /* DROPDOWN FIX FOR MOBILE */
+  .main-menu li ul {
+    position: static;
+    display: block;
+    background: #ffffff;
+  }
+
+  .main-menu li ul a {
+    color: black;
+  }
+
+  /* QUOTE BUTTON */
+  .quote {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* LL SECTION STACK */
+  .ll-container {
+    flex-direction: column;
+  }
+
 }
 
+/* EXTRA SMALL SCREEN */
+@media (max-width: 480px) {
+
+  .hero-logo {
+    width: 120px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+}
